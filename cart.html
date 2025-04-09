@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/cart.scss">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spirax&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+
+
+    <header class="top-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 d-flex align-items-center">
+                    <i class="bi bi-telephone"></i> +00 1234 567 &nbsp;
+                    <i class="bi bi-envelope"></i> youremail@email.com
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="social-icons d-inline">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-dribbble"></i></a>
+                    </div>
+                    <div class="auth-links d-inline">
+                        <a href="signup.html">SIGN UP</a>
+                        <a href="login.html">LOG IN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">LIQOUR STORE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    MENU
+</button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Product
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="product.html">Product</a></li>
+                          <li><a class="dropdown-item" href="singleproduct.html">Single product</a></li>
+                          <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+                          <li><a class="dropdown-item" href="#">Checkout</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./blog.html">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="shoppingBagDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bag-shopping"></i> 
+                        </a>
+                        <!-- <ul class="dropdown-menu" aria-labelledby="shoppingBagDropdown">
+                            <li><a class="dropdown-item" href="product.html">Product</a></li>
+                            <li><a class="dropdown-item" href="#">Single product</a></li>
+                            <li><a class="dropdown-item" href="#">Cart</a></li>
+                            <li><a class="dropdown-item" href="#">Checkout</a></li>
+                        </ul> -->
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <i class="fa-solid fa-user"></i> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+
+    <div class="hero-wrap" style="background-image: url(assets/img/bg_2.jpg);" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-center">
+            <div class="col-md-8 ftco-animate d-flex align-items-end">
+                <div class="text w-100 text-center">
+                    <p>Home>Cart></p>
+                  <h1 class="mb-4">My Cart</h1>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <table class="table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="checkbox" class="checkbox" checked>
+                    <img src="assets/img/kind-4.jpg" class="img-thumbnail">
+                    <div class="text">
+                        <strong>Jim Beam Kentucky Straight</strong>
+                        <p class="text-muted">Fugiat voluptates quasi nemo, ipsa perferendis</p>
+                    </div>
+                </td>
+                <td>$44.99</td>
+                <td><input type="number" value="2" class="input-qty"></td>
+                <td>$89.98</td>
+                <td><span class="remove-btn">&times;</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" class="checkbox" checked>
+                    <img src="assets/img/kind-6.jpg" class="img-thumbnail">
+                    <div class="text">
+                        <strong>Jim Beam Kentucky Straight</strong>
+                        <p class="text-muted">Fugiat voluptates quasi nemo, ipsa perferendis</p>
+                    </div>
+                </td>
+                <td>$44.99</td>
+                <td><input type="number" value="2" class="input-qty"></td>
+                <td>$89.98</td>
+                <td><span class="remove-btn">&times;</span></td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <input type="checkbox" class="checkbox" checked>
+                    <img src="assets/img/kind-1.jpg" class="img-thumbnail">
+                    <div class="text">
+                        <strong>Jim Beam Kentucky Straight</strong>
+                        <p class="text-muted">Fugiat voluptates quasi nemo, ipsa perferendis</p>
+                    </div>
+                </td>
+                <td>$44.99</td>
+                <td><input type="number" value="2" class="input-qty"></td>
+                <td>$89.98</td>
+                <td><span class="remove-btn">&times;</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" class="checkbox" checked>
+                    <img src="assets/img/kind-2.jpg" class="img-thumbnail">
+                    <div class="text">
+                        <strong>Jim Beam Kentucky Straight</strong>
+                        <p class="text-muted">Fugiat voluptates quasi nemo, ipsa perferendis</p>
+                    </div>
+                </td>
+                <td>$44.99</td>
+                <td><input type="number" value="2" class="input-qty"></td>
+                <td>$89.98</td>
+                <td><span class="remove-btn">&times;</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" class="checkbox" checked>
+                    <img src="assets/img/kind-3.jpg" class="img-thumbnail">
+                    <div class="text">
+                        <strong>Jim Beam Kentucky Straight</strong>
+                        <p class="text-muted">Fugiat voluptates quasi nemo, ipsa perferendis</p>
+                    </div>
+                </td>
+                <td>$44.99</td>
+                <td><input type="number" value="2" class="input-qty"></td>
+                <td>$89.98</td>
+                <td><span class="remove-btn">&times;</span></td>
+            </tr>
+               
+        </tbody>
+    </table>
+
+
+<div class="endtotal">
+    <div class="cart-totals">
+        <h2>Cart Totals</h2>
+        <div class="totals-row">
+            <span>Subtotal</span>
+            <span>$20.60</span>
+        </div>
+        <div class="totals-row">
+            <span>Delivery</span>
+            <span>$0.00</span>
+        </div>
+        <div class="totals-row">
+            <span>Discount</span>
+            <span>$3.00</span>
+        </div>
+        <hr>
+        <div class="totals-row total">
+            <span>TOTAL</span>
+            <span>$17.60</span>
+        </div>
+    </div>
+    <button class="checkout-btn">Proceed to Checkout</button>
+</div>
+    
+    
+
+
+
+
+
+
+ <footer class="main_footer">
+    <div class="row footer_value">
+        <div class="col-2">
+            <h1><span><a href="#">Liqour</a></span> Store</h1>
+            <p>Far far away, behind the word mountains, far from the countries.</p>
+            <div class="circles">
+                <div class="circle"><i class="fa-brands fa-twitter"></i></div>
+                <div class="circle"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="circle"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+        
+        </div>
+        <div class="col-2 ">
+            <h1>My Accounts</h1>
+            <ul>
+                <li><a href="#">></a>My Account</li>
+                <li><a href="#">></a>Register</li>
+                <li><a href="#">></a>Log in</li>
+                <li><a href="#">></a>My Order</li>
+            </ul>
+        </div>
+        <div class="col-2 ">
+            <h1>Information</h1>
+            <ul>
+                <li><a href="#">></a>About Us</li>
+                <li><a href="#">></a>Catalog</li>
+                <li><a href="#">></a>Contact us</li>
+                <li><a href="#">></a>Term & Conditions</li>
+            </ul>
+        </div>
+        <div class="col-2 ">
+            <h1>Quick Link            </h1>
+            <ul>
+                <li><a href="#">></a>New User</li>
+                <li><a href="#">></a>Help Center</li>
+                <li><a href="#">></a>Report Spam</li>
+                <li><a href="#">></a>Faq's</li>
+            </ul>
+        </div>
+        <div class="col-2 ">
+            <h1>Have a Questions?</h1>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-map"></i></a>	203 Fake St. Mountain View, San Francisco, California</li>
+                <li><a href="#"><i class="fa-solid fa-phone"></i></a>	+2 392 3929 210</li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a>yourdomain.com</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row footer_two">
+        <div class="col-12">
+            <div class="text">
+                <p>Copyright ©2025 All rights reserved | This template is made with  by <a href="">Colorlib.com</a></p>
+            </div>
+        </div>
+    </div>
+    
+</footer> 
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
